@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages
+    {
+        stage('compile')
+        {
+            steps{
+                echo 'compiled successfully';
+            }
+        }
+        stage('Junit')
+        {
+            steps{
+                echo 'Junit done!';
+            }
+        }
+        stage('deploy')
+        {
+            steps{
+                echo 'deployd successfully!';
+            }
+        }
+    }
+}
